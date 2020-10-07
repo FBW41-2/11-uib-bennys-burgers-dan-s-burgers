@@ -1,2 +1,86 @@
 // This is where you can import other stylesheets or write your scss code
+
+$maincolor: #9400ff;
+$brightcolor: #ffffff;
+$font: Love Ya Like A Sister;
+
+$navbar-light-brand-color: $maincolor;
+$navbar-light-color: $maincolor;
+$navbar-light-brand-hover-color: $brightcolor;
+$navbar-light-hover-color: $brightcolor;
+$jumbotron-color: $brightcolor;
+$card-border-width: 0;
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+  .navbar {
+    background: #000000;
+  }
+
+  .jumbotron {
+    background-image: url("../images/lidye-1Shk_PkNkNw-unsplash.jpg");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    p {
+      font-size: 0.9em;
+      font-weight: bold;
+    }
+
+    .btn {
+      background-color: $maincolor;
+      border: 0;
+    }
+
+    h1 {
+      font-family: $font;
+    }
+  }
+
+  h1 {
+    font-family: $font;
+  }
+
+  .card-title {
+    font-family: $font;
+  }
+
+  .forimage {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    justify-content: center;
+
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+
+    img {
+      display: block;
+      width: 70%;
+      margin: auto;
+    }
+  }
+
+  section.highlights {
+    background: $maincolor;
+
+    .row {
+      align-items: center;
+      justify-content: space-around;
+
+      .btn {
+        color: $maincolor;
+        background-color: $brightcolor;
+        border-color: $maincolor;
+      }
+    }
+  }
+
+  .btn {
+    border-radius: 0;
+  }
+}
